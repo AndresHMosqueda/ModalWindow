@@ -23,7 +23,7 @@ const SearchPage = ({ location }) => {
         {location.search}
       </p>
 
-      {parametros === false ? (
+      {parametros === search ? (
         // isShowing: true
         <Modal
           width={["333px", "111px"]}
