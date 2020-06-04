@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { ModalOverlay } from './ModalOverlay';
 import { ModalWrapper } from './ModalWrapper';
 
-const Modal = ({ isShowing, hide, width, height, margin, padding, contentModal }) => isShowing ? ReactDOM.createPortal(
+const Modal = ({ isShowing, hideModal, width, height, margin, padding, contentModal }) => isShowing ? ReactDOM.createPortal(
   <React.Fragment>
     {/* <div className="modal-overlay"/> */}
     <ModalOverlay>
@@ -17,7 +17,7 @@ const Modal = ({ isShowing, hide, width, height, margin, padding, contentModal }
       padding={padding}
       >
         <div className="modal-header">
-          <button type="button" className="modal-close-button" data-dismiss="modal" aria-label="Close" onClick={hide}>
+          <button type="button" className="modal-close-button" data-dismiss="modal" aria-label="Close" onClick={hideModal}>
             <span aria-hidden="true">&times;</span>
           </button>
         </div>

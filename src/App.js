@@ -8,15 +8,12 @@ import Search from './Search';
 import Login from './Login';
 
 const App = () => {
-  const {isShowing, toggle} = useModal();
- 
-  const encodeString = 'IG9iamVjdCA6IHsgCiAgICAgICAgInNvdXJjZUlEIjogIjk5OTkiLAogICAgICAgIAogICAgICAgICJyZXR1cm5QYXRoIjogImh0dHBzOi8vcWEudndteXZ3dWkuc3ZjLnd1c2EuaW8vb2F1dGgyL2F1dGgiLAogICAgICAgIAogICAgICAgICJlbWFpbCI6ICJ2b3BmbjEwN0BtYWlsbmF0b3IuY29tIgogICAgICAgIAogfQ=='
-  const decodeString = atob(encodeString)
-  let angelEjmplo = decodeString.replace(/"/g, "");
-  console.log('angelEjmplo',angelEjmplo);
-  let arrayDecoded = angelEjmplo.split(" ").filter(word => word.trim().length > 0);
-  console.log('angelEjmplo a Array', arrayDecoded);
-
+  // const encodeString = 'IG9iamVjdCA6IHsgCiAgICAgICAgInNvdXJjZUlEIjogIjk5OTkiLAogICAgICAgIAogICAgICAgICJyZXR1cm5QYXRoIjogImh0dHBzOi8vcWEudndteXZ3dWkuc3ZjLnd1c2EuaW8vb2F1dGgyL2F1dGgiLAogICAgICAgIAogICAgICAgICJlbWFpbCI6ICJ2b3BmbjEwN0BtYWlsbmF0b3IuY29tIgogICAgICAgIAogfQ=='
+  // const decodeString = atob(encodeString)
+  // let angelEjmplo = decodeString.replace(/"/g, "");
+  // console.log('angelEjmplo',angelEjmplo);
+  // let arrayDecoded = angelEjmplo.split(" ").filter(word => word.trim().length > 0);
+  // console.log('angelEjmplo a Array', arrayDecoded);
 
   // let angelArray = decodeString.split(" ")
   // let removeWhiteSpace = angelArray.filter(word => word.trim().length > 0)

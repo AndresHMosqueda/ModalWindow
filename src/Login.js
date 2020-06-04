@@ -4,8 +4,6 @@ import Modal from "./customHooks/Modal";
 
 class Login extends Component {
   render() {
-    // const { isShowing, toggle } = useModal();
-
     return (
       <>
        <h1>'Unhappy path!!!!'</h1>
